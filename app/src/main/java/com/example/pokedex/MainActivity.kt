@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.GsonBuilder
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                         val pokemonAdapter = PokemonAdapter(this@MainActivity, randomPokemon)
                         println(pokemonAdapter.itemCount)
                         recyclerView.apply {
-                            layoutManager = LinearLayoutManager(this@MainActivity)
+                            layoutManager = GridLayoutManager(this@MainActivity, 3, GridLayoutManager.VERTICAL, false)
                             adapter = pokemonAdapter
                         }
                     }
