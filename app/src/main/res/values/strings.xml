@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pokedex</string>
+    <string name="title_poke">PokePokedex</string>
+    <string name="app_made_by">An application made by :</string>
+    <string name="app_author">Tony Blard</string>
+    <string name="explain_text">Welcome Trainer! You will find here a compendium of available pokemons</string>
+</resources>
